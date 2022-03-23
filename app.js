@@ -22,12 +22,11 @@ let ponline = 0;
 let donline = 0;
 
 function refreshPlayerCount(){
-  // axios.get(`https://api.mcsrvstat.us/2/${config["server-ip"]}`)
-  // .then((response) => {
-  //   ponline = response.data.players.online;
-  //   console.log("Playercount is refreshed!");
-  // });
-  ponline = 99999;
+  axios.get(`https://api.mcsrvstat.us/2/${config["server-ip"]}`)
+  .then((response) => {
+    ponline = response.data.players.online;
+    console.log("Playercount is refreshed!");
+  });
 
   axios.get(`https://discord.com/api/guilds/654002085632802842/widget.json`)
   .then((res) => {
