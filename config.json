@@ -1,0 +1,10 @@
+{
+    "title": "Dorah Network Store",
+    "images": {
+        "logo": "https://via.placeholder.com/400x250",
+        "coins": "https://cdn.discordapp.com/attachments/704295130777124904/956216983563681852/Gold_Ingot_JE4_BE2.webp",
+        "ranks": "https://cdn.discordapp.com/attachments/704295130777124904/956216645590847548/Block_of_Gold_JE6_BE3.webp",
+        "crates": "https://cdn.discordapp.com/attachments/704295130777124904/956217485537992805/White_Shulker_Box.webp"
+    },
+    "server-ip": "dorahsmp.devnando.works"
+}

@@ -1,0 +1,58 @@
+<%- include("header") %> 
+<%- include("sidebar") %> 
+<div class="col">
+    <div class="card shadow mb-4">
+      <div class="card-header d-flex justify-content-between align-items-center" style="height: 90px;background: #5CA42C;">
+        <h6 class="fw-bold m-0" style="font-size: 25px;padding: 16px;">Welcome</h6>
+      </div>
+      <div class="card-body" style="background: #2F3436;">
+        <div class="row row-cols-1" style="margin: 10px;">
+          <div class="col">
+            <div class="row row-cols-1">
+              <div class="col">
+                <h1 style="font-size: 25px;">Welcome to</h1>
+              </div>
+              <div class="col">
+                <h1 style="font-size: 40px;font-weight: bold;border-style: none;">Dorah Network Store</h1>
+              </div>
+              <div class="col" style="margin-top: 24px;">
+                <p style="color: #90A2A2;font-size: 19px;">Welcome to Dorah Network Store. To begin shopping, please select a category from the sidebar. Please note that ranks cost a one-time fee and are unlocked permanently!</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <hr />
+          </div>
+          <div class="col">
+            <div class="row row-cols-1">
+              <div class="col">
+                <h1 style="font-size: 25px;font-weight: bold;color: #FED463;">Help &amp; Support</h1>
+              </div>
+              <div class="col" style="margin-top: 24px;">
+                <p style="color: #90A2A2;font-size: 19px;">Need any questions answered before checkout? Waited more than 20 minutes but your package still has not arrived? Ask the community/staff on our forum, or for payment support, submit a support ticket on our forum.</p>
+                <button onclick="location.href='https://discord.gg/Dvaqyy3426'" class="btn bold" style="background: #FED463;color: #44340A;" type="button">Join our Community</button>
+              </div>
+            </div>
+          </div>
+          <div>
+            <hr />
+          </div>
+          <div class="col">
+            <div class="row row-cols-1">
+              <div class="col">
+                <h1 style="font-size: 25px;font-weight: bold;color: var(--bs-danger);">Refund Policy</h1>
+              </div>
+              <div class="col" style="margin-top: 24px;">
+                <p style="color: #90A2A2;font-size: 19px;">All payments are final and non-refundable. Attempting a chargeback will result in permanent and irreversible banishment from all of our servers, our Store. <br />
+                  <br />Please review our Terms &amp; Conditions and Privacy Policy for more information about our rules, purchase terms, and how this Store handles any personal data
+                </p>
+                <button onclick="location.href='/terms';" class="btn mt-3 mb-2 mb-sm-0 bold" type="button" style="margin-right: 10px;background: var(--bs-danger);border-radius:5px;">Terms &amp; Condition</button>
+                <button onclick="location.href='/policy';" class="btn mt-3 bold" type="button" style="margin-right: 10px;background: var(--bs-danger);">Privacy Policy</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<%- include("footer") %> 

@@ -1,0 +1,35 @@
+<%- include("header") %> 
+<%- include("popups/wip") %> 
+<div id="popups"></div>
+<%- include("sidebar") %> 
+<div class="col">
+    <div class="card shadow mb-4">
+        <div class="card-header d-flex justify-content-between align-items-center" style="height: 90px;background: var(--bs-success);">
+            <h6 class="fw-bold m-0" style="font-size: 25px;padding: 16px;">Welcome</h6>
+        </div>
+        <div class="card-body" style="background: var(--dark-card);">
+            <div class="row row-cols-1" style="margin: 10px;">
+                <div class="col">
+                    <div class="row row-cols-1">
+                        <div class="col">
+                            <h1 style="font-size: 25px;">Crates</h1>
+                        </div>
+                        <div class="col" style="margin-top: 24px;">
+                            <p style="color: var(--bs-gray-600);font-size: 17px;">Purchasing a rank will cause higher value ranks to discount the difference between the higher value rank and your current rank, so you never overpay.<br></p>
+                        </div>
+                        <div class="col" style="margin-top: 10px;">
+                            <div id="item-lists" class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-2 row-cols-xl-3 row-cols-xxl-3">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<%- include("footer") %> 
+<script>
+    <% for(var i=0; i < items.length; i++) { %>
+    <% let data = items[i]; %>
+        createItem("<%= data.id %>", "<%= data.image %>", "<%= data.name %>", "<%= data.price %>", `<%= data.description %>`, "<%= data.goto %>");
+    <% } %>
+</script>
